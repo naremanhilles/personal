@@ -1,152 +1,120 @@
 
-html, body
-{
-	padding: 0;
-	margin: 0;
+*{
+     -webkit-box-sizing:border-box;
+     -moz-box-sizing:border-box;
+     box-sizing:border-box;
 }
-body
-{
-	background-color: #EAEAEA;
-	font-family: 'Droid Arabic Kufi', serif;
-	font-size: 14px;
-	line-height: 22px;
-	-webkit-text-size-adjust: none;
+body{
+    perspective: 1000px;
+     background-color: #444;
 }
-body *
-{
-	text-shadow: none;
+.naremancard{
+    width: 400px;
+    height: 620px;
+    margin: 50px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+}
+.naremancard:hover{
+     transform: rotateY(180deg);
+}
+.naremancard > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    color: #777;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: arial, tahoma;
+    text-align: center;
+}
+.naremancard .naremanfront{
+    z-index: 2;
+ backface-visibility: hidden;
 }
 
-#maincontainer{
-	width:1100px;
-	margin:0px auto;
-	}
-#header{
-	width:100%;
-	background-color:#3F3E3E;
-	float:right;
-   
-	}
-
-.headerdata1 li {
-	display: inline-block;
-	direction:rtl;
-	float:right;
-	padding-right:10px;
-	height:40px;
-	color:white;
-	clear:both;
-	
-	}
-
-.headerdata2 li {
-	display: inline-block;
-	direction:rtl;
-	float:right;
-	padding-right:10px;
-	height:40px;
-	color:white;
-    font-size: 20px;
-	
-	}
-
-.headerdata3 li a {
+.naremancard .naremanfront header{
+    background-color: darkgreen;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 55px;
+    border-radius: 10px 10px 0 0;
     
-	display: inline-block;
-	direction:rtl;
-	float:left;
-	padding-left:30px;
-	height:40px;
-	color: #F7F9B0;
-    font-size: 22px;
-  
-	
-	}
-
-a
-{
-	color: aliceblue;
-	text-decoration: none;
 }
-#contentcolumn{
-	width:935px;
-	padding: 50px 0px 50px 0px;
+.naremancard .naremanfront img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 25px;
+}
+.naremancard .naremanfront h3{
+    margin-bottom: 20px;
+}
+.naremancard .naremanfront p{
+ margin: 0 auto;
    
-	}
-#contentcolumn span{
-    font-size: 16px;
-   
+    line-height: 1.7;
 }
-#rightcolumn{
-	width:165px;
-	background-color: firebrick;
-	float:right;
-    margin-bottom: 80px;
-	}
-#rightcolumn ul li img{
-    float: left;
-}
-#rightcolumn ul{
-   list-style-type: none;
-}
-#rightcolumn li{
-    font-size: 17px;
-    padding-bottom: 30px;
-}
-.k h1{
-    word-spacing: 10px;
-    font-size: 30px;
-    text-align:center;
-	position:relative;
-	top:10px;
-	right:10px;
-	color:orange;
-	display:block;
-}
-.studentData {
-	width:646px;
-	float:right;
-	display:inline-block;
-	margin-right:30px;
-	margin-top:40px;
-	border-radius: 5px 5px 5px 5px;
-	background-color:white;
-		padding-top:30px;
 
-	}
-.studentData p {
-	color:red;
-	font-size:14px;
-	direction:rtl;
-	padding-right:30px;
-
-	}	
-.studentData p,
-.studentData span{
-    font-size: 16px;
+.naremancard .naremanfront span{
+   margin-top:75px;
+    display: inline-block;
+    color: #60Ac37;
+    font-weight: bold;
 }
-.lm img{
-    width: 212px;
-    height: 350px;
-   margin-top: 45px;
-    border-radius: 5px;
-    float:left;
-	display:inline-block;
+
+.naremancard .naremanback{
+    z-index: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
    
 }
-
-
-#footer{
-	width:80%;
-	background-color:black;
-	color:white;
-	text-align:center;
-	height:30px;
-    margin-left: 145px;
-    font-size: 18px;
-    
+.naremancard .naremanback ul{
+    list-style: none;
+    padding: 0;
+    line-height: 2;
+}
+.naremancard .naremanback ul li{
+    color: #444;
+}
+.naremancard .naremanback ul li span{
+   color: #60Ac37;
+    font-weight: bold;  
+}
+.naremancard .naremanback h3{
+    color: darkgreen;
+  margin-bottom: 3px;  
+}
+.naremancard .naremanback p{
+  margin: 0 auto;
    
-	}
+    line-height: 1.2;  
+}
+.naremancard .naremanback .date{
+    color: chartreuse;
+    margin-bottom: 2px;
+}
+.naremancard .naremanback .tr{
+    color: darkgreen;
+    margin-bottom: 2px;
+}
+.naremancard .naremanback .com{
+    color: darkolivegreen;
+}
 
-	.clear {clear:both;}
+
+
+
+
+
+
+
+
+
 
